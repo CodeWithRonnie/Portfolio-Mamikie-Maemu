@@ -38,7 +38,7 @@ nav ul li a::after{
    content: '';
    width: 0;
    height: 2px;
-   background: rgb(0, 129, 39);
+   background: rgb(233, 24, 9);
    position: absolute;
    left: 0;
    bottom: -7px;
@@ -49,4 +49,22 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 
+}
+.intro-text{
+    margin-top: 16% ;
+    font-size: 17px;
+}
+.intro-text h1{
+    padding-bottom: 18px;
+
+}
+
+.intro-text p{
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.intro-text span{
+    color: red;
 }
