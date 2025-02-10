@@ -10,6 +10,8 @@ background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.
 color: #ffff;
 }
 
+
+
 nav{
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +21,17 @@ nav{
 }
 
 .container{
-    padding: 10px 3%;
+    max-width: 100%;
+    height: 100vh;
+    background-image: url(images/mamikie-section1.img.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 nav ul li{
@@ -82,3 +94,20 @@ nav ul li a:hover::after{
     
     
 }
+
+/* section two. About me */
+
+.about-me-cols{
+    margin: 40px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.about-me-col1{
+    flex-basis: 35%;
+}
+.About-me-img{
+    width: 100%;
+    border-radius: 17px;
+
+}
+
