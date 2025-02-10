@@ -6,7 +6,7 @@
     }
     
     body{
-    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    background:  linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
     color: #ffff;
     }
     
@@ -51,7 +51,7 @@
        content: '';
        width: 0;
        height: 2px;
-       background: rgb(233, 24, 9);
+       background: #CC0F4E;
        position: absolute;
        left: 0;
        bottom: -7px;
@@ -80,7 +80,7 @@
     }
     
     .intro-text span{
-        color: red;
+        color: #CC0F4E;
     }
     #download-cv{
         background: rgb(109, 109, 208);
@@ -106,9 +106,10 @@
 }
 .About-me-img{
     width: 100%;
-    border-radius: 17px;
+    border-radius: 60%;
 
 }
+
 
 .about-me-col2{
     flex-basis: 60%;
@@ -118,7 +119,7 @@
 }
 
 .about-me-titles{
-    color: salmon;
+    color: #CC0F4E;
     font-size: 25px;
 
 }
