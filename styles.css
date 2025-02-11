@@ -128,22 +128,29 @@
 .title-links::after{
     content: '';
     width: 0;
-    height: 6px;
-    color: wheat;
+    height: 2px;
+    background: rgb(0, 0, 0);
     position: absolute;
     left: 0;
-    bottom: 12gpx;
+    bottom: -6px;
     transition: 0.5s;
 }
 .title-links.active-link::after{
-    width: 70%;
+    width: 40%;
 }
 
-.title-contents li{
+.title-contents ul li{
     list-style: none;
     padding-top: 15px;
 }
 
-.title-contents span{
-    color: #CC0F4E;
+.title-contents ul li span{
+    color: wheat;
+    font-size: 13px;
+}
+.title-contents{
+    display: none;
+}
+.title-contents.active-contents{
+    display: block;
 }
