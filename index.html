@@ -44,14 +44,33 @@
         </p>
 
         <div class="about-me-titles">
-          <p id="skills">Skills</p>
-          <p id="experience">Experience</p>
-          <p id="education">Education</p>
+          <p class="title-links active-link" onclick="opentab('education')">Education</p>
+          <p class="title-links" onclick="opentab('skills')">Skills</p>
+          <p class="title-links" onclick="opentab('experience')">Experience</p>
         </div>
-        <div class="title-contents">
+        <div class="title-contents" id="education">
           <ul>
-            <li>Software Development</li>
-            <li>Web Development</li>
+            <li><span>2016</span><br>Matric NSC Certificate</li>
+            <li><span>2019</span><br>Diploma In Infomation Technology <br> Elevtive: Systems Development</li>
+          </ul>
+        </div>
+        <div class="title-contents active-contents" id="skills">
+          <ul>
+            <li><span>Soft Skills</span><br><li>Effecctive Communication</li>
+            <li>Team Player</li>
+            <li>Collaboration</li>
+            <li>Time Management</li>
+            <li>Problem-Solving</li></li>
+            <li><span>Technical Skills</span><br></li><li>HTML and CSS</li>
+            <li>Javascript and Python</li>
+            <li>Troubleshooting and Debugging</li>
+            <li>......</li></li>
+          </ul>
+        </div>
+        <div class="title-contents" id="experience">
+          <ul>
+            <li><span>2019 - 2021</span><br>Grindrod Intermodal/Fuelogic <br>IT Support Intern</li>
+            <li><span>2021 - 2023</span><br>Mobicel Halfway House Midrand <br>Assemby Technician</li>
           </ul>
         </div>
       </div>
