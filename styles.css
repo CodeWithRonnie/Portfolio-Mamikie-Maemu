@@ -1,104 +1,92 @@
 *{
-margin: 0;
-padding: 0;
-font-family: Geneva, Tahoma, sans-serif;
-box-sizing: border-box;
-}
-
-body{
-background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
-color: #ffff;
-}
-
-
-
-nav{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-evenly;
- 
-}
-
-.container{
-    max-width: 100%;
-    height: 100vh;
-    background-image: url(images/mamikie-section1.img.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.container img{
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    padding: 10px 10px;
-    margin: 20px;
-}
-
-nav ul li a{
+    margin: 0;
+    padding: 0;
+    font-family: Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    }
+    
+    body{
+    background:  linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
     color: #ffff;
-    text-decoration: none;
-    position: relative;
-}
-
-nav ul li a::after{
-   content: '';
-   width: 0;
-   height: 2px;
-   background: rgb(233, 24, 9);
-   position: absolute;
-   left: 0;
-   bottom: -7px;
-   transition: 0.5ms;
-
-}
-
-nav ul li a:hover::after{
-    width: 100%;
-
-}
-.intro-text{
-    margin-top: 16% ;
-    font-size: 17px;
-}
-.intro-text h1{
-    padding-bottom: 10px;
-
-}
-
-.intro-text p{
-    font-size: 40px;
-    font-weight: bold;
-    padding-bottom: 10px;
-
-}
-
-.intro-text span{
-    color: red;
-}
-#download-cv{
-    background: rgb(109, 109, 208);
-    color: black;
-    font-weight: bold;
-    border: 2px solid rgb(109, 109, 208);
-    height: 40px;
-    width: 12%;
-    border-radius: 23px;
-    padding: 10px;
+    }
     
     
-}
+    
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content:space-evenly;
+     
+    }
+    .intro-name{
+        color: #CC0F4E;
+        font-weight: bold;
+        font-size: 35px;
+        text-shadow: 7px 4px 5px rgb(14, 14, 14);
+    }
+    
+   
 
+    
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px 10px;
+        margin: 20px;
+        text-shadow: 2px 2px 4px 2px grey;
+    }
+    
+    nav ul li a{
+        color: #ffff;
+        text-decoration: none;
+        position: relative;
+    }
+    
+    nav ul li a::after{
+       content: '';
+       width: 0;
+       height: 2px;
+       background: #CC0F4E;
+       position: absolute;
+       left: 0;
+       bottom: -7px;
+       transition: 0.5ms;
+    
+    }
+    
+    nav ul li a:hover::after{
+        width: 100%;
+    
+    }
+    .intro-text{
+        margin-top: 10% ;
+        font-size: 17px;
+        margin-left: 74px;
+    }
+    .intro-text h1{
+        padding-bottom: 10px;
+    
+    }
+    
+    .intro-text p{
+        font-size: 40px;
+        font-weight: bold;
+        padding-bottom: 10px;
+    
+    }
+    
+    .intro-text span{
+        color: #CC0F4E;
+        text-shadow: 7px 4px 5px rgb(14, 14, 14);
+    }
+    
+    
 /* section two. About me */
 
 .about-me-cols{
     margin: 40px 40px;
+    padding-top: 50px;
     display: flex;
     justify-content: space-between;
 }
@@ -107,24 +95,62 @@ nav ul li a:hover::after{
 }
 .About-me-img{
     width: 100%;
-    border-radius: 17px;
+    border-radius: 60%;
 
 }
+
 
 .about-me-col2{
     flex-basis: 60%;
 }
+.info-about-me{
+    padding-top: 20px;
+}
 
-.about-me-titles li{
-    list-style: none;
+.about-me-titles{
+    color: #CC0F4E;
+    font-size: 25px;
+    text-shadow: 7px 5px 4px black;
+
 }
 .about-me-titles{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
 }
+.title-links{
+    margin-right: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+.title-links::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.title-links.active-link::after{
+    width: 40%;
+}
 
-.title-contents li{
+.title-contents ul li{
     list-style: none;
     padding-top: 15px;
+}
+
+.title-contents ul li span{
+    color: wheat;
+    font-size: 13px;
+}
+.title-contents{
+    display: none;
+}
+.title-contents.active-contents{
+    display: block;
 }
