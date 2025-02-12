@@ -1,24 +1,15 @@
-* {
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
-
 *{
     margin: 0;
     padding: 0;
-    font-family: Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
 body {
-    background: linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
+    background:#af8a8a;
+    font-family: Tahoma, Geneva, Verdana, sans-serif
     }
     
-    body{
-        font-family: 'Poppins', sans-serif;
-    background:  linear-gradient(to right, rgb(173, 83, 137), rgb(60, 16, 83));
-    color: #ffff;
-}
-
+  
 .container {
     display: flex;
     flex-direction: column;
@@ -89,7 +80,7 @@ nav ul li a:hover::after {
     text-shadow: 7px 4px 5px rgb(14, 14, 14);
 }
 
-    }
+    
     html{
         scroll-behavior: smooth;
     }
@@ -228,19 +219,89 @@ nav ul li a:hover::after {
         transform: none;
     }
 
+    /* profile section */
+
+    section{
+        padding-top: 12px;
+        height: 96vh;
+        margin: 0 10rem;
+        box-sizing: border-box;
+        min-height: fit-content;
+    }
+
+    .section-container{
+        display: flex;
+
+    }
+
+    #profile{
+        display: flex;
+        justify-content: center;
+        gap: 5rem;
+        height: 80vh;
+    }
+    .profile-img{
+       display: flex;
+       height: 40px;
+       width: 400px;
+       margin: auto 0;
+    }
+
+    .profile-info{
+        align-self: center;
+        text-align: center;
+    }
+    .profile-info p{
+        font-weight: 600;
+    }
+
+
+
+
+
+
     .button-container{
         display: flex;
         justify-content: center;
-        margin: 20px;
         gap: 20px;
     }
     
     .button{
         font-family: 500;
         padding: 4px;
-        width: 20%;
-        border-radius: 5px;
+        width: 70%;
+        border-radius: 24px;
     }
+
+    .resume-button.contact-button{
+        border: rgb(53,53,53) solid;
+    }
+    .resume-button.contact-button:hover{
+        cursor: pointer;
+
+    }
+    .resume-button.contact-button{
+        background: rgb(53,53,53);
+        color: #fff;
+    }
+
+    .resume-button:hover{
+        background: #0000;
+    }
+
+    .contact-button{
+        background:none;
+    }
+    .contact-button:hover{
+        border: rgb(255,255,255) 1px solid;
+    }
+
+    .button-container{
+        gap: 20%
+    }
+
+
+
     
     .intro-text{
         margin-top: 10% ;
