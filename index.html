@@ -25,10 +25,10 @@
             <span></span>
           </div>
           <div class="menu-links">
-            <li><a href="#" onclick="toggleMenu">Home</a></li>
-                <li><a href="#" onclick="toggleMenu">About</a></li>
-                <li><a href="#" onclick="toggleMenu">Portfolio</a></li>
-                <li><a href="#" onclick="toggleMenu">Contact</a></li>
+            <li><a href="#Home" onclick="toggleMenu">Home</a></li>
+                <li><a href="#About" onclick="toggleMenu">About</a></li>
+                <li><a href="#Portfolio" onclick="toggleMenu">Portfolio</a></li>
+                <li><a href="#Contact" onclick="toggleMenu">Contact</a></li>
           </div>
         </nav>
 
@@ -41,16 +41,23 @@
                 <h2 class="profile-title">I'm Mamikie Maemu</h2>
                 <p class="profile-text">Software Developer</p> 
                 <div class="button-contatiner">
-                    <button class="button resume-button" onclick="window.open(assets/Maemu-Mamikie-Resume.pdf)";>
+                    <button class="button resume-button" onclick="window.open('.assets/Maemu-Mamikie-Resume.pdf')";>
                         Download CV
                     </button>
                 </div>
                 <div class="button-contatiner">
-                    <button class="button contact-button" onclick="location.href='./contact'";>
+                    <button class="button contact-button" onclick="location.href='./#contact'";>
                         Contact Info
                     </button>
                 </div>
-              
+                <div>
+                    <img src=".assest/linkedin.png" alt="LinkedIn Profile"
+                     class="icon" onclick="location.href='linkedin.com/in/mamikie-ronewa-maemu-a43150329'">
+
+                    <img src=".assest/github.png" alt="GitHub Profile"
+                     class="icon" onclick="location.href='github.com/MamikieRonewa'">
+                </div>
+
 
         </section>
 
@@ -106,7 +113,7 @@
             </div>
         </div>
     </div>
-
+   
         </div>
     </div>
 </body>
