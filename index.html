@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquerie.css">
     <title>Maemu Mamikie Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <nav>
+        <nav id="container-nav">
           <h1 class="intro-name">Maemu Mamikie Ronewa</h1>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -17,13 +17,26 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <nav id="hamburger-nav">
+          <div class="hamburger-menu"></div>
+          <div class="hamburger-icon" onclick="toggleMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#" onclick="toggleMenu">Home</a></li>
+                <li><a href="#" onclick="toggleMenu">About</a></li>
+                <li><a href="#" onclick="toggleMenu">Portfolio</a></li>
+                <li><a href="#" onclick="toggleMenu">Contact</a></li>
+          </div>
+        </nav>
+
         <div class="intro-text">
           <h1>Software Developer</h1>
           <p>Hi, my name is <span>Mamikie</span><br> and I'm a Software Developer <br> from South Africa</p>
         </div>
         
-        
-    </div>
   </div>
 
   <div class="section-two">
