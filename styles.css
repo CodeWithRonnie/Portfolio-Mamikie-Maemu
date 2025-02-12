@@ -256,49 +256,32 @@ nav ul li a:hover::after {
     }
 
 
-
-
-
-
     .button-container{
         display: flex;
-        justify-content: center;
-        gap: 20px;
+        justify-content: space-around;
+        gap: 10px;
     }
     
     .button{
+        display: block;
         font-family: 500;
         padding: 4px;
         width: 70%;
         border-radius: 24px;
-    }
-
-    .resume-button.contact-button{
-        border: rgb(53,53,53) solid;
-    }
-    .resume-button.contact-button:hover{
+        background: linear-gradient(to right, #1e3c72, #2a5298); 
+        color: white;
+        border: none;
+        padding: 10px 20px;
         cursor: pointer;
-
-    }
-    .resume-button.contact-button{
-        background: rgb(53,53,53);
-        color: #fff;
+        border-radius: 5px;
+        transition: 0.3s ease;
     }
 
-    .resume-button:hover{
-        background: #0000;
+    .button:hover{
+        background: linear-gradient(to left, rgb(28, 78, 28), green);
     }
-
-    .contact-button{
-        background:none;
-    }
-    .contact-button:hover{
-        border: rgb(255,255,255) 1px solid;
-    }
-
-    .button-container{
-        gap: 20%
-    }
+   
+  
 
 
 
