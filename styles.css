@@ -441,6 +441,15 @@ nav ul li a:hover::after {
         height: 2rem;
      }
 
+     footer{
+        height: 26vh;
+        margin: 0.1rem;
+     }
+
+     footer p{
+        text-align: center;
+     }
+
 
 
     
