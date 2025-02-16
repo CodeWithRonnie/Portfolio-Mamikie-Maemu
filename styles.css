@@ -5,7 +5,7 @@
 }
 
 body {
-    background:#af8a8a;
+    background:  linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
     font-family: Tahoma, Geneva, Verdana, sans-serif
     }
     
@@ -150,6 +150,7 @@ nav ul li a:hover::after {
     .hamburger-menu{
         position: relative;
         display: inline-block;
+        margin-top: 20px;
     }
 
     .hamburger-icon{
@@ -169,7 +170,7 @@ nav ul li a:hover::after {
 
     .menu-links{
         position: absolute;
-        top: 80%;
+        top: 100%;
         right: 0;
         background-color: #fff;
         width: fit-content;
@@ -182,9 +183,9 @@ nav ul li a:hover::after {
         display: block;
         padding: 12px;
         text-align: center;
-        color: #0000;
+        color: #fff;
         text-decoration: none;
-        transition: all 0.3 ease-in-out;
+        transition: all 0.4 ease-in-out;
     }
 
     .menu-links li{
@@ -250,7 +251,7 @@ nav ul li a:hover::after {
     }
 
     .profile-picture img{
-        border-radius: 70%;
+        border-radius: 20%;
         height: 350px;
         width: 300px;
         margin-top: 60px;
