@@ -4,60 +4,200 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquerie.css">
     <title>Maemu Mamikie Portfolio</title>
 </head>
 <body>
-    <div class="container">
-        <nav>
+        <nav id="container-nav">
           <h1 class="intro-name">Maemu Mamikie Ronewa</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="intro-text">
-          <h1>Software Developer</h1>
-          <p>Hi, my name is <span>Mamikie</span><br> and I'm a Software Developer <br> from South Africa</p>
-        </div>
-        
-        
+        <nav id="hamburger-nav">
+          <div class="hamburger-menu">Maemu Mamikie Ronewa</div>
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about-me" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
+        </nav>
+
+        <section id="profile" class="section-container">
+            <div class="profile-picture">
+                <img src="images/mamikie-section2.img.jpg" alt="profile-picture">
+            </div>
+            <div class="profile-info">
+                <p>Hello &#128075</p>
+                <h1 class="profile-title">I'm Mamikie Maemu</h1>
+                <p class="profile-text">Software Developer</p> 
+                <div class="button-container">
+                    <button class="button resume-button" onclick="window.open('assets/Maemu-Mamikie-Resume.pdf')" download="Maemu-Mamikie-Resume.pdf";>
+                        Download CV
+                    </button>
+                    <button class="button contact-button" onclick="location.href='./#contact'";>
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials">
+                    <img src="assets/linkedin.png" alt="LinkedIn Profile"
+                     class="icon" onclick="location.href='https://www.linkedin.com/in/mamikie-ronewa-maemu-a43150329/'">
+
+                    <img src="assets/github.png" alt="GitHub Profile"
+                     class="icon" onclick="location.href='https://github.com/CodeWithRonnie'">
+                </div>
+
+
+        </section>
+
+        <!-- about me section -->
+         <section id="about-me">
+            <p class="know-more">Get to know more</p>
+            <h1 class="about-title">About Me</h1>
+            <div class="about-me-container">
+                <div class="about-pic-container">
+                    <img src="images/mamikie-section1.img.jpg" alt="About-me-profile" class="about-pic">
+                </div>
+                <div class="about-details">
+                    <div class="about-me-containers">
+                        <div class="details-container">
+                            <img src="" alt="experience" class="about-icon">
+                            <h3>Experience</h3>
+                            <p>Support Intern grindrod</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="" alt="experience" class="about-icon">
+                            <h3>Education</h3>
+                            <p>richfield for Diplomaand grade 12</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="" alt="experience" class="about-icon">
+                            <h3>Skills</h3>
+                            <p>sofft skills and technical skills</p>
+                        </div>
+                    </div>
+                    <div class="about-me-info-text">
+                        <p>I am a proud capaciti trainee</p>
+                    </div>
+                </div>
+            </div>
+            <img src="" alt="arrow" class="arrow-icon" onclick="location.href='./#experience'">
+         </section>
+
     </div>
   </div>
 
-  <div class="section-two">
-    <div class="about-me-cols">
-
-      <div class="about-me-col1">
-        <img src="images/mamike-section2.img.jpg" class="About-me-img" alt="">
-      </div>
-
-      <div class="about-me-col2">
-        <h1>About Me</h1>
-        <p class="info-about-me">Hi, I am Maemu Mamikie Ronewa, a passionate Sofware Develeopment trainee
-          currently part of the Capaciti Demand Program, where I'm honing my skills in creative dynamic and efficient 
-          solutions. I specialize in Software Development and have a strong foundation in both Javascript and Python. <br><br>
-          With deep interest in problem-solving and continuous learning, I aim to build user-friendly applications that
-          will make a real impact. I am excited to grow in the field of Software Development, expolring new technologies,
-          and contributing to innovative projects.
-        </p>
-
-        <div class="about-me-titles">
-          <p id="skills">Skills</p>
-          <p id="experience">Experience</p>
-          <p id="education">Education</p>
+  <section id="experience">
+    <p class="profile-info">Explore My</p>
+    <h1 class="experience-title">Experience</h1>
+    <div class="details-container">
+        <div class="about-experience">
+            <div class="experience-details">
+                <h2 class="experince-subtitle">software Developer</h2>
+                <div class="article-container">
+                    <article><img src="" alt="experience-icon" class="experience-icon">
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                    </article>
+                    <article><img src="" alt="experience-icon" class="experience-icon">
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
+                    </article>
+                    <article><img src="" alt="experience-icon" class="experience-icon">
+                        <h3>JavaScript</h3>
+                        <p>Intermediate</p>
+                    </article>
+                    <article><img src="" alt="experience-icon" class="experience-icon">
+                        <h3>Python</h3>
+                        <p>Intermediate</p>
+                    </article>
+                    <article><img src="" alt="experience-icon" class="experience-icon">
+                        <h3>Java</h3>
+                        <p>Basis</p>
+                    </article>
+                </div>
+            </div>
         </div>
-        <div class="title-contents">
-          <ul>
-            <li>Software Development</li>
-            <li>Web Development</li>
-          </ul>
+        <div class="details-container">
+        <div class="about-experience">
+            <div class="experience-details">
+                <h2 class="experince-subtitle">software Developer</h2>
+                <div class="article-container">
+                    <article><img src="" alt="experience-icon" class="experience-icon">
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                    </article>
+                    <article><img src="" alt="experience-icon" class="experience-icon">
+                        <h3>CSS</h3>
+                        <p>Experienced</p>
+                    </article>
+                    <article><img src="" alt="experience-icon" class="experience-icon">
+                        <h3>JavaScript</h3>
+                        <p>Intermediate</p>
+                    </article>
+                    <article><img src="" alt="experience-icon" class="experience-icon">
+                        <h3>Python</h3>
+                        <p>Intermediate</p>
+                    </article>
+                    <article><img src="" alt="experience-icon" class="experience-icon">
+                        <h3>Java</h3>
+                        <p>Basis</p>
+                    </article>
+                </div>
+            </div>
         </div>
-      </div>
-
     </div>
-  
-    
+    </div>
+    <img src="" alt="arrow" class="arrow-icon" onclick="location.href='./#projects'">
+  </section>
+
+  <!-- contact -->
+   <section id="contact">
+    <p class="profile info">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+        <img src="" alt="email-icon" class="contact-icon">
+        <p><a href="mailtosomeone">Exampe@gmail.com</a></p>
+    </div>
+
+    <div class="contact-info-container">
+        <img src="" alt="linkedin" class="linked-icon">
+        <p><a href="linkedin">linkedinprofile</a></p>
+    </div>
+    </div>
+   </section>
+
+   <!-- last section -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169 2025 Mamikie Ronewa Maemu. All Rights Reserved.</p>
+    </footer>
+
+
+
+
+
+
+
+    <script src="index.js"></script>
 </body>
 </html>
