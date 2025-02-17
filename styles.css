@@ -318,13 +318,20 @@ nav ul li a {
 
      #experience{
         position: relative;
+        margin-top: 15%;
+     }
+     .experience-title{
+        text-align: center;
+        padding-bottom: 15px;
+        color: white;
+        text-shadow: 5px 5px 7px black;
      }
 
-     .experience-subtitle{
-        color: rgb(85,85,85);
+     .sub-title-experience{
+        color: rgb(53,53,53);
         font-weight: 600;
-        font-size: 1.75rem;
-        margin-bottom: 2rem;
+        font-size: 1.80rem;
+        margin-bottom: 20px;
      }
 
      .experience-details{
@@ -333,20 +340,38 @@ nav ul li a {
         flex-direction: column;
      }
 
+     .experience-icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 35px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 7px black;
+     }
+
      .article-container{
         display: flex;
         text-align: initial;
         flex-wrap: wrap;
         flex-direction: row;
-        gap: 2.5rem;
-        justify-content: space-around;
+        gap: -30px;
+        justify-content: space-evenly;
+        
      }
 
      article{
         display: flex;
-        width: 10rem;
-        justify-content: space-around;
-        gap: 0.5rem;
+        width: 15rem;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 20px;
+     }
+     .experience-span{
+        font-size: 15px;
+        color: grey;
+        font-weight: lighter;
      }
 
      article .experience-icon{
