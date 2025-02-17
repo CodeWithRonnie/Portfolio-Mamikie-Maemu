@@ -6,3 +6,9 @@ function toggleMenu(){
     icon.classList.toggle('open');
 
 }
+
+function scrollToContact(){
+    let contactSection = document.getElementById('contact');
+    contactSection.scrollIntoView({behavior: 'smooth'});
+
+}
