@@ -329,6 +329,8 @@ nav ul li a {
 
      .sub-title-experience{
         color: rgb(53,53,53);
+        text-decoration-line: underline;
+        text-shadow: 2px 2px 4px 2px grey;
         font-weight: 600;
         font-size: 1.80rem;
         margin-bottom: 20px;
@@ -361,6 +363,10 @@ nav ul li a {
         
      }
 
+     #experience .soft-details-container{
+        margin-top: 30px;
+     }
+
      article{
         display: flex;
         width: 15rem;
@@ -376,6 +382,9 @@ nav ul li a {
 
      article .experience-icon{
         cursor: default;
+     }
+     .arrow-icon{
+       color: red;
      }
 
      /* Contact me section */
