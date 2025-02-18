@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
@@ -40,67 +41,14 @@ nav ul li {
 
 nav ul li a {
     color: #ffff;
-    text-decoration: none;
-    position: relative;
-}
-
-nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background: #CC0F4E;
-    position: absolute;
-    left: 0;
-    bottom: -7px;
-    transition: 0.5ms;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
-
-.intro-text {
-    margin-top: 20px;
-    font-size: 17px;
-    margin-left: 74px;
-}
-
-.intro-text h1 {
-    padding-bottom: 10px;
-}
-
-.intro-text p {
-    font-size: 40px;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-
-.intro-text span {
-    color: #CC0F4E;
-    text-shadow: 7px 4px 5px rgb(14, 14, 14);
-}
-
-    
-    html{
-        scroll-behavior: smooth;
     }
-
-    p{
-        color: rgb(85, 85, 85);
-    }
-
-    a .button{
-        transition: all 300ms ease;
-    }
-
-
     
-    
+ 
     nav{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content:space-around;
+        justify-content:space-evenly;
      
     }
     .intro-name{
@@ -110,6 +58,8 @@ nav ul li a:hover::after {
         text-shadow: 7px 4px 5px rgb(14, 14, 14);
     }
     
+   
+
     
     nav ul li{
         list-style: none;
@@ -123,7 +73,6 @@ nav ul li a:hover::after {
         color: #ffff;
         text-decoration: none;
         position: relative;
-        cursor: pointer;
     }
     
     nav ul li a::after{
@@ -292,7 +241,7 @@ nav ul li a:hover::after {
         padding: 8px 25px;
         cursor: pointer;
         transition: 0.3s ease;
-        margin-bottom: 10px;
+        margin-button: 10px;
         box-shadow: 5px 5px 7px black;
     }
 
@@ -337,106 +286,41 @@ nav ul li a:hover::after {
     
 /* section two. About me */
 
-.section-two {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-}
-
-.about-me-cols {
+.about-me-cols{
     margin: 40px 40px;
-    padding-top: 50px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    width: 80%;
 }
-
-.about-me-col1 {
-    flex: 1;
-    margin: 10px;
+.about-me-col1{
+    flex-basis: 35%;
 }
-
-.About-me-img {
-    max-width: 100%;
-    height: auto;
+.About-me-img{
+    width: 100%;
     border-radius: 60%;
+
 }
 
-.about-me-col2 {
-    flex: 1;
-    margin: 10px;
-}
 
-.info-about-me {
+.about-me-col2{
+    flex-basis: 60%;
+}
+.info-about-me{
     padding-top: 20px;
 }
 
-.about-me-titles {
+.about-me-titles{
     color: #CC0F4E;
     font-size: 25px;
     text-shadow: 7px 5px 4px black;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-}
 
-.about-me-titles {
+}
+.about-me-titles{
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
 }
 
-.title-links {
-    margin-right: 50px;
-    font-size: 30px;
-    font-weight: 400;
-    cursor: pointer;
-    position: relative;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.title-links::after {
-    content: '';
-    width: 0;
-    height: 2px;
-    background: rgb(0, 0, 0);
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-
-.title-links.active-link::after {
-    width: 40%;
-}
-
-.title-links.active-link {
-    background-color: #f0f0f0;
-    border-color: #000;
-}
-
-.title-contents ul li {
+.title-contents li{
     list-style: none;
     padding-top: 15px;
-}
-
-.title-contents ul li span {
-    color: wheat;
-    font-size: 13px;
-}
-
-.title-contents {
-    display: none;
-    margin-top: 20px;
-}
-
-.active-contents {
-    display: block;
-}
-
-.title-contents.active-contents {
-    display: block;
 }
