@@ -13,6 +13,11 @@ function scrollToContact(){
 
 }
 
+function toggleZoom(element) {
+  element.classList.toggle('zoomed');
+}
+
+
 
 // chatbot section
 const chatIcon = document.getElementById('chat-icon');

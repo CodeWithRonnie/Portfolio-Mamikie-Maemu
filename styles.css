@@ -403,6 +403,75 @@ nav ul li a {
         
      }
 
+
+     /* certificate section */
+     
+     .certificates-section {
+        text-align: center; 
+        margin-top: 50px;  
+      }
+      
+      .certificates-heading {
+        font-size: 2.5rem;  
+        font-weight: bold;
+        margin-bottom: 40px; 
+        color: #e3d3d8; 
+        text-shadow: 4px 4px 6px black; 
+      }
+      
+      
+      .certificates-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px; 
+        padding: 40px;
+        transition: opacity 0.3s ease; 
+        max-width: 1200px;  
+        margin: 0 auto;  
+      }
+      
+      .certificate-item {
+        position: relative;
+        width: 200px;  
+        height: 250px; 
+        overflow: hidden;
+        border-radius: 10px; 
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out; 
+      }
+      
+      .certificate-item:hover {
+        transform: scale(2.05); 
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); 
+      }
+      
+      .certificate-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.3s ease-in-out;
+        border-radius: 10px;
+      }
+      
+      
+      a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+      }
+      
+      .certificates-container:hover {
+        opacity: 0.8;
+      }
+      
+
+
+
+
+
+
+
      #experience .soft-details-container{
         margin-top: 30px;
      }
@@ -475,7 +544,10 @@ nav ul li a {
         font-weight: bold;
      }
      .contact-info-container a{
-        color: #cb3968;
+        color: #e3d3d8;
+     }
+     .contact-info-container a:hover{
+        color: #CC0F4E;
      }
 
 
@@ -505,6 +577,16 @@ nav ul li a {
     font-size: 15px;
     color: #fff;
     text-shadow: 4px 4px 6px black;
+  }
+  .social-media h2:hover{
+    color: #e3d3d8;
+  }
+  .social-media a{
+    color: #e3d3d8;
+  }
+  .social-media a:hover{
+    color: #cb3968;
+
   }
 
 
