@@ -241,7 +241,7 @@ nav ul li a {
         padding: 8px 25px;
         cursor: pointer;
         transition: 0.3s ease;
-        margin-button: 10px;
+        margin-bottom: 10px;
         box-shadow: 5px 5px 7px black;
     }
 
@@ -257,8 +257,6 @@ nav ul li a {
     }
    
   
-
-
 
     
     .intro-text{
