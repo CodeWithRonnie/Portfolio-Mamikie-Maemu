@@ -2,8 +2,17 @@ function toggleMenu(){
     console.log('Menu Toggled');
     let menu = document.querySelector('.menu-links');
     let icon = document.querySelector('.hamburger-icon');
-    menu.classList.toggle('open');
+    if (menu){
+    menu.classList.toggle('active');
+    }else{
+      console.error('Menu not found');
+    }
+
+    if (icon){
     icon.classList.toggle('open');
+    }else{
+      console.error('Hamburger icon not found');
+    }
 
 }
 

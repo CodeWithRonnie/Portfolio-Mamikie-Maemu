@@ -117,17 +117,19 @@ nav ul li a {
     }
 
     .menu-links{
+        display: none;
+        flex-direction: column;
         position: absolute;
-        top: 100%;
-        right: 0;
-        background-color: #fff;
+        top: 60px;
+        left: 0;
+        background-color: #eb2b2b;
         width: fit-content;
         max-height: 0;
         overflow: hidden;
         transition:  all 0.4s ease-in-out;
     }
 
-    .menu-links a{
+    .menu-links.active{
         display: block;
         padding: 12px;
         text-align: center;
@@ -283,6 +285,7 @@ nav ul li a {
     }
 
     .about-details{
+
         justify-content: center;
         align-items: center;
         flex-direction: row;
@@ -323,6 +326,7 @@ nav ul li a {
         box-shadow: 5px 5px 7px rgb(214, 31, 74);
         text-align: center;
     }
+    
 
     .about-me-container{
         gap: 4rem;
