@@ -1,26 +1,203 @@
-@media screen and (max-width: 1400px){
+
+@media screen and (max-width: 1400px) {
     #profile {
         height: 83vh;
         margin-bottom: 6rem;
     }
-    .about-me-containers{
+    .about-me-containers {
         flex-wrap: wrap;
     }
 }
 
-
-
-@media screen and (max-width: 1200px){
-    #container-nav{
+@media screen and (max-width: 1200px) {
+    #container-nav {
         display: none;
     }
-    #hamburger-nav{
+    #hamburger-nav {
         display: flex;
     }
-    #experience, .experience-details{
+    #experience, .experience-details {
         margin-top: 2rem;
     }
-    #profile, .section-container{
+    #profile, .section-container {
         display: block;
+    }
+    .arrow {
+        display: none;
+    }
+    section, .section-container {
+        height: fit-content;
+    }
+    section {
+        margin: 0 5%;
+    }
+    .home-profile-pic {
+        width: 100vw;
+        height: 100vw;
+        margin: 0 auto 2rem;
+    }
+    .about-me-containers {
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%; 
+        overflow-x: hidden; 
+    }
+
+    #profile {
+        height: 70vh;
+        margin-bottom: 0;
+    }
+
+    #contact, footer {
+        height: 35vh;
+    }
+
+    .about-me-containers {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .contact-info-upper-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .facebook-icon, .instagram-icon, .tiktok-icon {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .contact-info-container {
+        margin: 0;
+        width: fit-content;
+    }
+
+    .contact-info-container p, .nav-links li a {
+        font-size: 0.9rem;
+    }
+
+    .sub-title-experience {
+        font-size: 1rem;
+    }
+
+    .intro-name {
+        font-size: 1.1rem;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .about-pic {
+        width: 100%;
+        height: 100vw;
+        object-fit: cover;
+        justify-content: center;
+    }
+
+    .certificates-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article {
+        font-size: 0.9rem;
+    }
+
+    footer nav {
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+    #hamburger-nav .hamburger-icon {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    #hamburger-nav .hamburger-icon span {
+        width: 30px;
+        height: 4px;
+        background-color: #333;
+        border-radius: 5px;
+    }
+
+    #hamburger-nav .menu-links {
+        display: none;
+    }
+
+    #hamburger-nav.active .menu-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        padding: 1rem 0;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #hamburger-nav .menu-links {
+        display: none;
+    }
+    #hamburger-nav.active .menu-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden; 
+    }
+    .home-profile-pic {
+        width: 100vw;
+        height: 100vw;
+        object-fit: cover; 
+        margin: 0 auto;
+    }
+    
+    footer, #contact {
+        height: 40vh;
+    }
+
+    .intro-name {
+        font-size: 1rem; 
+    }
+    .section-container {
+        height: auto; 
+    }
+
+    .about-pic {
+        width: 100%;
+        height: 100vw;
+        object-fit: cover;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 1rem;
     }
 }
