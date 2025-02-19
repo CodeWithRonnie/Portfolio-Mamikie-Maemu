@@ -1,20 +1,8 @@
-function toggleMenu(){
-    console.log('Menu Toggled');
-    let menu = document.querySelector('.menu-links');
-    let icon = document.querySelector('.hamburger-icon');
-    if (menu){
-    menu.classList.toggle('active');
-    }else{
-      console.error('Menu not found');
-    }
-
-    if (icon){
-    icon.classList.toggle('open');
-    }else{
-      console.error('Hamburger icon not found');
-    }
-
+function toggleMenu() {
+  const nav = document.getElementById('hamburger-nav');
+  nav.classList.toggle('active');
 }
+
 
 function scrollToContact(){
     let contactSection = document.getElementById('contact');
